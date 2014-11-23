@@ -52,8 +52,9 @@ app.get('/', function(req, res) {
 
 // detail page
 app.get('/movie/:id', function(req, res) {
+  var movieTitle = '《机械战警》';
   res.render('detail', {
-    title: 'imooc 详情页',
+    title: 'imooc ' + movieTitle,
     movie: {
       doctor: '何塞·帕迪里亚',
       country: '美国',
